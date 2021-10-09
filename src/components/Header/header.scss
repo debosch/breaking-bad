@@ -1,0 +1,16 @@
+.header {
+    height: 80px;
+    width: 100%;
+    background-color: rgb(51, 46, 46);
+    text-align: center;
+    line-height: 80px;
+}
+
+.header__text {
+    display: inline-block;
+    line-height: 100%;
+    vertical-align: middle;
+    color: white;
+    font-size: 30px;
+    margin: auto;
+}
