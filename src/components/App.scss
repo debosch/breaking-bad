@@ -4,8 +4,28 @@
     box-sizing: border-box;
 }
 
-html,
 body {
     height: 100%;
     background-color: rgba(51, 46, 46, 0.5);
+}
+
+.app__card-section {
+    height: 100%;
+    
+    max-width: 1400px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.app__card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @media (max-width: 992px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 660px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

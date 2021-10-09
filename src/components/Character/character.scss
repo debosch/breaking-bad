@@ -1,0 +1,25 @@
+.character-card {
+    box-shadow: 0 0 10px 1px rgba(104, 102, 100, 0.5);
+    border-radius: 5px;
+    margin: 10px;
+    transition: 0.3s ease-in-out;
+    &:hover {
+        transform: scale(105%);
+        background-color: rgb(240, 190, 53);
+        box-shadow: 0 0 10px 3px rgba(104, 102, 100, 0.8);
+    }
+}
+
+.character-card__image {
+    border-radius: 10px;
+    padding: 5px;
+    height: auto;
+    width: 100%;
+}
+
+.character-card__character-name {
+    color: white;
+    font-size: 24px;
+    margin: 5px;
+    text-align: center;
+}
