@@ -1,10 +1,14 @@
 import Header from './Header/Header';
-import Character from './Character/Character';
 import SearchBar from './Searchbar/Searchbar';
+import Character from './Character/Character';
+import Modal from './Modal/Modal';
+import { useState } from 'react';
 
 import './App.scss';
 
-function App() {
+const App = () => {
+  const [modalActive, setModalActive] = useState(false);
+
   return (
     <div className="app">
       <section className="app__header-section">
@@ -15,16 +19,10 @@ function App() {
           <SearchBar />
         </div>
         <div className="app__card-container">
-          <Character name="Walter White"/>
-          <Character name="Walter White"/>
-          <Character name="Walter White"/>
-          <Character name="Walter White"/>
-          <Character name="Walter White"/>
-          <Character name="Walter White"/>
-          <Character name="Walter White"/>
-          <Character name="Walter White"/>
+          <Character name="Walter White" onClick={ () => setModalActive(true) }/>
         </div>
       </section>
+      <Modal active={ modalActive } setActive={ setModalActive }/>
     </div>
   );
 }
