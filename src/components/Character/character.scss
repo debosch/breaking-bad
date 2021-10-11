@@ -4,11 +4,21 @@
     margin: 10px;
     transition: 0.3s ease-in-out;
     cursor: pointer;
+    animation: 0.8s ease-in-out both fade-in;
 
     &:hover {
         transform: scale(105%);
         background-color: rgb(240, 190, 53);
         box-shadow: 5px 5px 10px 3px rgba(53, 52, 51, 0.2);
+    }
+
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 }
 
