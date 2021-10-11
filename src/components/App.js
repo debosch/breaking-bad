@@ -1,5 +1,6 @@
 import Header from './Header/Header';
 import Character from './Character/Character';
+import SearchBar from './Searchbar/Searchbar';
 
 import './App.scss';
 
@@ -10,6 +11,9 @@ function App() {
         <Header text="BREAKING BAD"/>
       </section>
       <section className="app__card-section">
+        <div className="app__searchbar">
+          <SearchBar />
+        </div>
         <div className="app__card-container">
           <Character name="Walter White"/>
           <Character name="Walter White"/>
